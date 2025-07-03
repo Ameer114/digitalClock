@@ -3,9 +3,9 @@ body{
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     height: 100vh;
-    background:linear-gradient( rgba(238, 236, 236, 0.257)), url(./assets/image.png);
+    background: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,12 +14,49 @@ body{
 }
 
 .text{
-    font-size: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(15px);
+    font-size: 50px;
+    margin-left: 60px;
     border-radius: 10px;
     font-family: monospace;
     padding: 10px;
+    color: white;
+}
+
+.blue{
+    color: rgba(63, 154, 214, 0.873);
+}
+.orange{
+    color: rgb(243, 151, 66);
+}
+.bigblue{
+    color: rgb(0, 102, 255);
+}
+
+.btn{
+    padding: 0;
+    border: none;
+    font-size: 50px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+.text{
+    font-size: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    padding: 10px;
+    color: white;
+}
+.btn{
+    font-size: 30px;
+    right: 50px;
+    bottom: 80px;
+}
 }
