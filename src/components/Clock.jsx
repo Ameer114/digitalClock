@@ -16,7 +16,7 @@ useEffect(()=>{
 
   return (
     <div className='text'>
-      {time.getHours()>12? "0"+time.toLocaleTimeString() : " " +time.toLocaleTimeString()}
+      {time.getHours()>12  && time.getHours()<10 ? "0"+time.toLocaleTimeString() : " " +time.toLocaleTimeString()}
     </div>
   )
 }
